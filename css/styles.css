@@ -1,0 +1,277 @@
+/*Colors
+gray:           #bebebe 
+purple:         #8e859b
+darkpurple:     #625772
+pink:           #f9a1bc
+lightyellow:    #fefaec
+*/
+
+
+/*    Globals */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #625772;
+    /*text-shadow: 0 1px 3px rgba(0, 0, 0, .5);*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    margin: 20px 0 10px;
+}
+
+h1,
+.h1 {
+    font-size: 3.2em;
+    margin: 30px 0 15px;
+}
+
+h2,
+.h2 {
+    font-size: 2.6em;
+    margin: 25px 0 15px;
+}
+
+h3,
+.h3 {
+    font-size: 1.825em;
+    line-height: 1.4;
+}
+
+h4,
+.h4 {
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+
+h5,
+.h5 {
+    font-size: 1.25em;
+    line-height: 1.4em;
+}
+
+h6,
+.h6 {
+    font-size: 0.9em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #8e859b;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+
+/*Links*/
+
+a,
+a:focus,
+a:hover {
+    color: #8e859b;
+}
+
+a:active {
+    color: #625772;
+}
+
+
+/* Custom button*/
+
+.btn.btn-filled,
+.btn.btn-filled:hover,
+.btn.btn-filled:focus {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    background-color: #f9a1bc;
+    border: 1px solid #fff;
+}
+
+.btn.btn-filled:active {
+    -webkit-box-shadow: inset 0 3px 5px rgba(98, 87, 114, .25);
+    box-shadow: inset 0 3px 5px rgba(98, 87, 114, .25);
+}
+
+.btn.btn-empty,
+.btn.btn-empty:hover,
+.btn.btn-empty:focus {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #625772;
+    background-color: transparent;
+    border: 1px solid #f9a1bc;
+}
+
+.btn.btn-empty:active {
+    -webkit-box-shadow: inset 0 3px 5px rgba(249, 161, 188, .5);
+    box-shadow: inset 0 3px 5px rgba(249, 161, 188, .5);
+}
+
+
+/* Structure */
+
+html,
+body {
+    height: 100vh;
+    background-color: rgba(254, 250, 236, 1);
+    /*background-repeat: repeat;*/
+    /*background-image: url(../images/bg/grain.png);*/
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/* Navigation */
+
+/*.navbar-default {*/
+    /*background-color: #8e859b;*/
+    /*border-color: #e7e7e7;*/
+    /*text-transform: uppercase;*/
+    /*margin-bottom: 10px;*/
+/*}*/
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav>li>a {
+    color: #fefaec;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #625772;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>li>a:active {
+    background-color: #fefaec;
+    -webkit-box-shadow: inset 0 3px 5px rgba(98, 87, 114, .25);
+    box-shadow: inset 0 3px 5px rgba(98, 87, 114, .25);
+    color: #625772;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        float: left;
+    }
+    .navbar-nav {
+        float: right;
+    }
+}
+
+footer {
+    border-color: #e7e7e7;
+    bottom: 0;
+    margin-top: 15px;
+    padding: 10px;
+    position: absolute;
+}
+
+footer a,
+footer p {
+    color: #8e859b;
+}
+
+footer a:hover {
+    color: #fefaec;
+    text-decoration: none;
+}
+
+.background-skyline {
+    min-width: 420px;
+    width: 100%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.left-wrapper {
+    background-color: #f9a1bc;
+    height: 1000px;
+    width: 34.59%;
+}
+
+.right-wrapper {
+    border-left: 2px dotted #bebebe;
+    min-width: 420px;
+}
+
+.made-with-love {
+    left: 0;
+    position: absolute;
+    right: 4%;
+    top: 56%;
+}
+
+.hello-world {
+    text-align: center;
+}
+
+.photo-circle {
+    border-radius: 50%;
+    left: 14%;
+    position: relative;
+    top: 5%;
+    width: 250px;
+}
+
+@media (max-width: 420px) {
+    .left-wrapper {
+        height: 230px;
+        min-width: 420px;
+        width: 100%;
+    }
+
+    .right-wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .photo-circle {
+        width: 210px;
+    }
+
+    .made-with-love {
+        right: 0;
+        top: 35%;
+        left: 38%;
+        font-size: 0.7em;
+    }
+
+    .footer {
+        text-align: left !important;
+    }
+}
+
+
+
+
